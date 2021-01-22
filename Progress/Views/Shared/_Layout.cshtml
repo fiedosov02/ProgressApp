@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+    <link rel="stylesheet" href="~/Content/Site.css">
+    <title>Project ASP.NET MVC</title>
+
+</head>
+
+<body>
+    <nav class="navbar navbar-dark navbar-expand-sm fixed-top">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand mr-auto" href="@Url.Action("Index", "Home")">
+                <img src="~/Content/img/pngwing.com.png" alt="logo" height="30"
+                     width="41">
+            </a>
+            <div class="collapse navbar-collapse" id="Navbar">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="@Url.Action("Index", "Home")">
+                            <span class="fa fa-home"></span>Home
+                        </a>
+                    </li>
+
+
+                </ul>
+            </div>
+            <a class="nav-link" href="@Url.Action("Login", "Account")">Login</a>
+            <a class="nav-link" href="@Url.Action("Register", "Account")">Register</a>
+        </div>
+
+    </nav>
+    @RenderBody()
+
+    <footer class="footer">
+        <div class="container ">
+            <div class="row">
+                <div class="col-7 col-sm-5 ">
+                    <h5>Address</h5>
+                    <address>
+                        Nizunska street <br>
+                        Kiev<br>
+                        Ukrain<br>
+                        <i class="fa fa-phone fa-lg"></i>: +380 954859487<br>
+                        <i class="fa fa-fax fa-lg"></i>: +380 954859487<br>
+                        <i class="fa fa-envelope fa-lg"></i>: <a href="mailto:fiedosov02@gmail.comm">fiedosov02@gmail.com</a>
+                    </address>
+                </div>
+
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-auto">
+                    <p>© By Serhiy Fedosov</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

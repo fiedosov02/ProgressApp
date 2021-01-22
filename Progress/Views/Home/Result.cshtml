@@ -1,0 +1,39 @@
+﻿
+@{
+    ViewBag.Title = "Result";
+}
+<div class="row">
+    <div class="col-12">
+        <h1 class="text-center">RESULT</h1>
+        <img class="rounded mx-auto d-block" src="~/Content/img/pngegg.png" width="150px" alt="">
+
+    </div>
+</div>
+
+@using (Html.BeginForm("Buy", "Home", FormMethod.Post))
+{
+<table class="table table-striped auto__table text-left">
+    <tr>
+        <td><p>All time:</p></td>
+        <td><p>@ViewBag.TimeForWork.Item1 hours</p> </td>
+    </tr>
+    <tr>
+        <td><p>It`s time for work</p></td>
+        <td><p>@ViewBag.TimeForWork.Item2 hours</p> </td>
+    </tr>
+    <tr>
+        <td><p>This is time for work with a playtime</p> </td>
+        <td><p>@ViewBag.TimeForWork.Item3 hours</p></td>
+    </tr>
+    <tr>
+        <td><p>The end of your work</p> </td>
+        <td><p>@ViewBag.ResultTime</p></td>
+    </tr>
+</table>
+}
+<div class="row">
+    <div class="col-12">
+        <h3>This programm give you simple information about how much time you have to devote to your business if you want to succeed it quickly. Also, this program takes into account the pauses required during operation, and every hour there is a pause for 15 minutes. </h3>
+    </div>
+</div>
+

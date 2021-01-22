@@ -1,0 +1,16 @@
+C:\Users\DELL_5587_1\source\repos\Progress\Progress.Infrastructure.Data\bin\Debug\Progress.Infrastructure.Data.dll.config
+C:\Users\DELL_5587_1\source\repos\Progress\Progress.Infrastructure.Data\bin\Debug\Progress.Infrastructure.Data.dll
+C:\Users\DELL_5587_1\source\repos\Progress\Progress.Infrastructure.Data\bin\Debug\Progress.Infrastructure.Data.pdb
+C:\Users\DELL_5587_1\source\repos\Progress\Progress.Infrastructure.Data\bin\Debug\EntityFramework.dll
+C:\Users\DELL_5587_1\source\repos\Progress\Progress.Infrastructure.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\DELL_5587_1\source\repos\Progress\Progress.Infrastructure.Data\bin\Debug\Progress.Domain.Data.dll
+C:\Users\DELL_5587_1\source\repos\Progress\Progress.Infrastructure.Data\bin\Debug\Progress.Domain.Interface.dll
+C:\Users\DELL_5587_1\source\repos\Progress\Progress.Infrastructure.Data\bin\Debug\Progress.Domain.Data.pdb
+C:\Users\DELL_5587_1\source\repos\Progress\Progress.Infrastructure.Data\bin\Debug\Progress.Domain.Interface.pdb
+C:\Users\DELL_5587_1\source\repos\Progress\Progress.Infrastructure.Data\bin\Debug\EntityFramework.xml
+C:\Users\DELL_5587_1\source\repos\Progress\Progress.Infrastructure.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\DELL_5587_1\source\repos\Progress\Progress.Infrastructure.Data\obj\Debug\Progress.Infrastructure.Data.csprojAssemblyReference.cache
+C:\Users\DELL_5587_1\source\repos\Progress\Progress.Infrastructure.Data\obj\Debug\Progress.Infrastructure.Data.csproj.CoreCompileInputs.cache
+C:\Users\DELL_5587_1\source\repos\Progress\Progress.Infrastructure.Data\obj\Debug\Progress.Infrastructure.Data.csproj.CopyComplete
+C:\Users\DELL_5587_1\source\repos\Progress\Progress.Infrastructure.Data\obj\Debug\Progress.Infrastructure.Data.dll
+C:\Users\DELL_5587_1\source\repos\Progress\Progress.Infrastructure.Data\obj\Debug\Progress.Infrastructure.Data.pdb

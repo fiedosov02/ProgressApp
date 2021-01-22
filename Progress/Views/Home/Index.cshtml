@@ -1,0 +1,96 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+    
+<div class="collapse navbar-collapse" id="Navbar">
+    <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+            <a class="nav-link" href="./index.html">
+                <span class="fa fa-home"></span>Home
+            </a>
+        </li>
+       
+
+    </ul>
+</div>
+<header class="jumbotron">
+    <div class="container">
+        <div class="row row-header">
+            <div class="col-12 col-sm-6">
+                <h1>Don`t waste your time</h1>
+                <p>Use your time usefully</p>
+            </div>
+            <div class="col-12 col-sm align-self-center">
+                <img style="height: 120px;" src="~/Content/img/pngwing.com.png" alt="logo" class="img-fluid">
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="container">
+    <div class="row">
+        <ol class="col-12 breadcrumb">
+            <li class="breadcrumb-item"><a href="./index.html"><span class="fa fa-home"></span>Home</a></li>
+        </ol>
+        <div class="col-12 col-sm-12">
+            <h3>About us</h3>
+            <hr>
+        </div>
+    </div>
+
+    <div class="row row-content">
+        <div class="col-sm-6">
+            <h2>Opportunities</h2>
+            <h5>Here you can calculate your time to achieve the task</h5>
+            <h5>
+                This site was created as the first project thanks to the ASP.NET MVC framework so there will be
+                errors but I tried
+            </h5>
+        </div>
+
+        <div class="col-sm">
+            <div class="card">
+                <h3 class="card-header bg-primary text-white">What you need</h3>
+                <div class="card">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">A task</li>
+                        <li class="list-group-item">Time</li>
+                        <li class="list-group-item">And a good mood</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="row row-content">
+        <div class="col-12">
+            @using (Html.BeginForm("Index", "Home", FormMethod.Post))
+            {
+                <table>
+                    <tr>
+                        <td><p>Add your task</p></td>
+                        <td><input type="text" name="Task" /> </td>
+                    </tr>
+                    <tr>
+                        <td><p>Add a date</p></td>
+                        <td><input type="datetime-local" name="Time" /> </td>
+                    </tr>
+                    <tr>
+                        <td><p>Add how many time for a task you have</p></td>
+                        <td><input type="text" name="TimeForTask" /> </td>
+                    </tr>
+                    <tr>
+                        <td> <p><input type="submit" value="Отправить" /></p> </td>
+                        @*<td>@Html.ActionLink("Show Result", "ShowResult")</td>*@
+                    </tr>
+                </table>
+            }
+
+        </div>
+    </div>
+</div>
+
+

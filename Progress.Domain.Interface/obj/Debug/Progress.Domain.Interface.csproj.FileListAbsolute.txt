@@ -1,0 +1,9 @@
+C:\Users\DELL_5587_1\source\repos\Progress\Progress.Domain.Interface\bin\Debug\Progress.Domain.Interface.dll
+C:\Users\DELL_5587_1\source\repos\Progress\Progress.Domain.Interface\bin\Debug\Progress.Domain.Interface.pdb
+C:\Users\DELL_5587_1\source\repos\Progress\Progress.Domain.Interface\bin\Debug\Progress.Domain.Data.dll
+C:\Users\DELL_5587_1\source\repos\Progress\Progress.Domain.Interface\bin\Debug\Progress.Domain.Data.pdb
+C:\Users\DELL_5587_1\source\repos\Progress\Progress.Domain.Interface\obj\Debug\Progress.Domain.Interface.csprojAssemblyReference.cache
+C:\Users\DELL_5587_1\source\repos\Progress\Progress.Domain.Interface\obj\Debug\Progress.Domain.Interface.csproj.CoreCompileInputs.cache
+C:\Users\DELL_5587_1\source\repos\Progress\Progress.Domain.Interface\obj\Debug\Progress.Domain.Interface.csproj.CopyComplete
+C:\Users\DELL_5587_1\source\repos\Progress\Progress.Domain.Interface\obj\Debug\Progress.Domain.Interface.dll
+C:\Users\DELL_5587_1\source\repos\Progress\Progress.Domain.Interface\obj\Debug\Progress.Domain.Interface.pdb
