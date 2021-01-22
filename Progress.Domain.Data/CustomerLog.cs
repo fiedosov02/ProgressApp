@@ -8,8 +8,7 @@ using System.Threading.Tasks;
 namespace Progress.Domain.Data
 {
     public class CustomerLog
-    {
-      // public int Id { get; set; }
+    { 
         [Required]
         public string Login { get; set; }
         [Required]

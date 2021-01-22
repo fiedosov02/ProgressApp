@@ -26,10 +26,6 @@ namespace Progress.Infrastructure.Bussiness
         public DateTime FinishOfWork(Customer customer)
         {
             var finish = customer.Time.AddDays(customer.TimeForTask); // date of finishing of work
-           
-            //CustomerRepository customer1 = new CustomerRepository();
-            //customer1.Save();
-           // customer.Time = finish;
             return finish;
         }
 

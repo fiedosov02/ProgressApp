@@ -63,7 +63,7 @@ namespace Progress.Controllers
             {
                 Customer customer = null;
                 //customer = db.Customers.FirstOrDefault(a => a.Email == customerRegister.Login); // searck customer with same login
-               customer= _log.GetCustomer(customerRegister, customer);
+                customer= _log.GetCustomer(customerRegister, customer);
                 if (customer == null)
                 {
                     customer = _log.Register(customerRegister, customer);

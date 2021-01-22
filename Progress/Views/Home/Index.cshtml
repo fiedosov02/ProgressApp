@@ -1,8 +1,10 @@
-﻿@{
+﻿@model Progress.Domain.Data.Customer
+
+@{
     ViewBag.Title = "Home Page";
 }
 
-    
+
 <div class="collapse navbar-collapse" id="Navbar">
     <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
@@ -10,7 +12,7 @@
                 <span class="fa fa-home"></span>Home
             </a>
         </li>
-       
+
 
     </ul>
 </div>
@@ -69,24 +71,27 @@
         <div class="col-12">
             @using (Html.BeginForm("Index", "Home", FormMethod.Post))
             {
-                <table>
-                    <tr>
-                        <td><p>Add your task</p></td>
-                        <td><input type="text" name="Task" /> </td>
-                    </tr>
-                    <tr>
-                        <td><p>Add a date</p></td>
-                        <td><input type="datetime-local" name="Time" /> </td>
-                    </tr>
-                    <tr>
-                        <td><p>Add how many time for a task you have</p></td>
-                        <td><input type="text" name="TimeForTask" /> </td>
-                    </tr>
-                    <tr>
-                        <td> <p><input type="submit" value="Отправить" /></p> </td>
-                        @*<td>@Html.ActionLink("Show Result", "ShowResult")</td>*@
-                    </tr>
-                </table>
+            <table>
+                <tr>
+                    <td><p>Add your task</p></td>
+                    <td><input type="text" name="Task" /> </td>
+                    <td> @Html.ValidationMessageFor(m => m.Task, "", new { @class = "text-danger" })</td>
+                </tr>             
+                <tr class="editor-task">
+                    <td><p>Add a date</p></td>
+                    <td><input type="datetime-local" name="Time" /> </td>
+                    <td> @Html.ValidationMessageFor(m => m.Time, "", new { @class = "text-danger" })</td>
+                </tr>
+                <tr>
+                    <td><p>Add how many time for a task you have</p></td>
+                    <td><input type="text" name="TimeForTask" /> </td>
+                    <td> @Html.ValidationMessageFor(m => m.TimeForTask, "", new { @class = "text-danger" })</td>
+                </tr>
+                <tr>
+                    <td> <p><input type="submit" value="Отправить" /></p> </td>
+                    @*<td>@Html.ActionLink("Show Result", "ShowResult")</td>*@
+                </tr>
+            </table>
             }
 
         </div>

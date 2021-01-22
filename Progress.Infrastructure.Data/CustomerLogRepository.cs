@@ -35,14 +35,9 @@ namespace Progress.Infrastructure.Data
         public Customer Register(CustomerRegister customerRegister, Customer c)
         {
 
-            cs.Create(new Customer { Email = customerRegister.Login, Password = customerRegister.Password, Time = DateTime.Now});
+            cs.Create(new Customer { Email = customerRegister.Login, Password = customerRegister.Password, TimeForTask=2, Task="dasd", Time = DateTime.Now});
             cs.Save();
-            //db.Customers.Add(new Customer { Email = customerRegister.Login, Password = customerRegister.Password });
-
-            //db.SaveChanges();
-             c = cs.GetRegistCustomer(customerRegister);
-            //c = db.Customers.Where(a => a.Email == customerRegister.Login && a.Password == customerRegister.Password).FirstOrDefault();
-           
+            c = cs.GetRegistCustomer(customerRegister);
             return c;
         }
         public Customer GetCustomer(CustomerRegister customerRegister, Customer c)

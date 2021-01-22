@@ -20,11 +20,6 @@ namespace Progress.Controllers
         //CustomerContext db = new CustomerContext();
         ICustomerRepository _customer;
         IResult _result;
-        public HomeController(ICustomerRepository a, IResult b)
-        {
-            _customer = a;
-            _result = b;
-        }
         public HomeController() 
         {
             IKernel ninjectKernel = new StandardKernel();
@@ -41,16 +36,19 @@ namespace Progress.Controllers
         [HttpPost]
         public ActionResult Index(Customer customer)
         {
-             _customer.Create(customer);
-            _customer.Save();
-            _result.CreateResult(customer);
-            _result.FinishOfWork(customer);
-            (double alltime, double timeForWork, double workTimeWitPlayTime) a = _result.CreateResult(customer);
-            
-            ViewBag.TimeForWork = a;
-            ViewBag.ResultTime = _result.FinishOfWork(customer);
-          
-            return View("Result");
+            if(ModelState.IsValid)
+            {
+                _customer.Create(customer);
+                _customer.Save();
+                _result.CreateResult(customer);
+                _result.FinishOfWork(customer);
+                (double alltime, double timeForWork, double workTimeWitPlayTime) a = _result.CreateResult(customer);
+                ViewBag.TimeForWork = a;
+                ViewBag.ResultTime = _result.FinishOfWork(customer);
+                return View("Result");
+               
+            }
+            return View();
         }
         
         public ActionResult Result()
