@@ -14,23 +14,24 @@ namespace Progress.Infrastructure.Data
    public class CustomerRepository : ICustomerRepository
     {
         private CustomerContext db;
-        public CustomerRepository()
-            => this.db = new CustomerContext();
-        public void Create(Customer customer)
-        {
-            db.Customers.Add(customer);
-            
-        }
 
-        public void Delete(int id)
+        public CustomerRepository()=>
+            this.db = new CustomerContext();
+
+        public void Create(Customer customer)=>      
+             db.Customers.Add(customer);
+           
+        public async void Delete(int id)
         {
-            var findCustomer = db.Customers.Find(id);
+            var findCustomer = await db.Customers.FindAsync(id);
             if(findCustomer != null)
             {
                 db.Customers.Remove(findCustomer);
             }
         }
+
         private bool disposed = false;
+
         public virtual void Dispose(bool disposing)
         {
             if (!this.disposed)
@@ -48,18 +49,21 @@ namespace Progress.Infrastructure.Data
             Dispose(true);
             GC.SuppressFinalize(this);
         }
-        public Customer GetCustomer(int id)
+
+        public async Task<Customer> GetCustomer(int id)
         {
-            return db.Customers.Find(id);
+            return await db.Customers.FindAsync(id);
         }
-        public Customer GetRegistCustomer(CustomerRegister customerRegister)
+
+        public async Task<Customer> GetRegistCustomer(CustomerRegister customerRegister)
         {
-            return db.Customers.Where(a => a.Email == customerRegister.Login && a.Password == customerRegister.Password).FirstOrDefault();
+            return await db.Customers.Where(a => a.Email == customerRegister.Login && a.Password == customerRegister.Password).FirstOrDefaultAsync();
             
         }
-        public IEnumerable<Customer> GetCustomerList()
+
+        public async Task<IEnumerable<Customer>> GetCustomerList()
         {
-            return db.Customers.ToList(); 
+            return await db.Customers.ToListAsync(); 
         }
 
         public void Save()
@@ -68,7 +72,7 @@ namespace Progress.Infrastructure.Data
             try
             {
 
-                db.SaveChanges();
+                db.SaveChangesAsync();
 
             }
             catch (DbEntityValidationException ex)

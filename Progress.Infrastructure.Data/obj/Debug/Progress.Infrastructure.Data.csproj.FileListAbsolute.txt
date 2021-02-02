@@ -14,3 +14,19 @@ C:\Users\DELL_5587_1\source\repos\Progress\Progress.Infrastructure.Data\obj\Debu
 C:\Users\DELL_5587_1\source\repos\Progress\Progress.Infrastructure.Data\obj\Debug\Progress.Infrastructure.Data.csproj.CopyComplete
 C:\Users\DELL_5587_1\source\repos\Progress\Progress.Infrastructure.Data\obj\Debug\Progress.Infrastructure.Data.dll
 C:\Users\DELL_5587_1\source\repos\Progress\Progress.Infrastructure.Data\obj\Debug\Progress.Infrastructure.Data.pdb
+C:\Users\fiedo\OneDrive\Рабочий стол\Лабораторні\Progress\Progress.Infrastructure.Data\bin\Debug\Progress.Infrastructure.Data.dll.config
+C:\Users\fiedo\OneDrive\Рабочий стол\Лабораторні\Progress\Progress.Infrastructure.Data\bin\Debug\Progress.Infrastructure.Data.dll
+C:\Users\fiedo\OneDrive\Рабочий стол\Лабораторні\Progress\Progress.Infrastructure.Data\bin\Debug\Progress.Infrastructure.Data.pdb
+C:\Users\fiedo\OneDrive\Рабочий стол\Лабораторні\Progress\Progress.Infrastructure.Data\bin\Debug\EntityFramework.dll
+C:\Users\fiedo\OneDrive\Рабочий стол\Лабораторні\Progress\Progress.Infrastructure.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\fiedo\OneDrive\Рабочий стол\Лабораторні\Progress\Progress.Infrastructure.Data\bin\Debug\Progress.Domain.Data.dll
+C:\Users\fiedo\OneDrive\Рабочий стол\Лабораторні\Progress\Progress.Infrastructure.Data\bin\Debug\Progress.Domain.Interface.dll
+C:\Users\fiedo\OneDrive\Рабочий стол\Лабораторні\Progress\Progress.Infrastructure.Data\bin\Debug\Progress.Domain.Data.pdb
+C:\Users\fiedo\OneDrive\Рабочий стол\Лабораторні\Progress\Progress.Infrastructure.Data\bin\Debug\Progress.Domain.Interface.pdb
+C:\Users\fiedo\OneDrive\Рабочий стол\Лабораторні\Progress\Progress.Infrastructure.Data\bin\Debug\EntityFramework.xml
+C:\Users\fiedo\OneDrive\Рабочий стол\Лабораторні\Progress\Progress.Infrastructure.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\fiedo\OneDrive\Рабочий стол\Лабораторні\Progress\Progress.Infrastructure.Data\obj\Debug\Progress.Infrastructure.Data.csprojAssemblyReference.cache
+C:\Users\fiedo\OneDrive\Рабочий стол\Лабораторні\Progress\Progress.Infrastructure.Data\obj\Debug\Progress.Infrastructure.Data.csproj.CoreCompileInputs.cache
+C:\Users\fiedo\OneDrive\Рабочий стол\Лабораторні\Progress\Progress.Infrastructure.Data\obj\Debug\Progress.Infrastructure.Data.csproj.CopyComplete
+C:\Users\fiedo\OneDrive\Рабочий стол\Лабораторні\Progress\Progress.Infrastructure.Data\obj\Debug\Progress.Infrastructure.Data.dll
+C:\Users\fiedo\OneDrive\Рабочий стол\Лабораторні\Progress\Progress.Infrastructure.Data\obj\Debug\Progress.Infrastructure.Data.pdb

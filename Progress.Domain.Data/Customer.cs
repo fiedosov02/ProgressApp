@@ -17,8 +17,9 @@ namespace Progress.Domain.Data
         public DateTime Time { get; set; }
         public string ResultTime { get; set; }
         [Required(ErrorMessage = "Write how many days you have to solve the problem")]
-        public  double TimeForTask{ get; set; }     
+        public  double TimeForTask{ get; set; }
         public string Email { get; set; }    
         public string  Password { get; set; }
+        
     }
 }

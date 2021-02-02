@@ -28,11 +28,13 @@ namespace Progress.Controllers
             ninjectKernel.Bind<IResult>().To<GetResult>();
             _result = ninjectKernel.Get<IResult>();
         }
+        
         [HttpGet]
         public ActionResult Index()
         {
             return View();
         }
+      
         [HttpPost]
         public ActionResult Index(Customer customer)
         {

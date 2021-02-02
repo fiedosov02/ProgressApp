@@ -19,9 +19,8 @@ namespace Progress.Infrastructure.Data
             if (!this.disposed)
             {
                 if (disposing)
-                {
                     db.Dispose();
-                }
+                
             }
             this.disposed = true;
         }
@@ -37,9 +36,12 @@ namespace Progress.Infrastructure.Data
 
             cs.Create(new Customer { Email = customerRegister.Login, Password = customerRegister.Password, TimeForTask=2, Task="dasd", Time = DateTime.Now});
             cs.Save();
-            c = cs.GetRegistCustomer(customerRegister);
+            Task<Customer> task = Task.Run<Customer>(async () => c = await cs.GetRegistCustomer(customerRegister)); // call async method
+            
+            //c =  cs.GetRegistCustomer(customerRegister).GetAwaiter().GetResult();
             return c;
         }
+
         public Customer GetCustomer(CustomerRegister customerRegister, Customer c)
         {
             c = db.Customers.FirstOrDefault(a => a.Email == customerRegister.Login);
